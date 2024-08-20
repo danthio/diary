@@ -1513,13 +1513,16 @@ root.resizable(0,0)
 can=tk.Canvas(width=1000,height=600,relief="flat",highlightthickness=0,border=0)
 can.place(in_=root,x=0,y=0)
 can.bind("<Button-1>",can_commands)
+def nxt_title(e):
+	global text
 
+	text.focus_set()
 
 title=tk.Entry(width=33,bg="#ffffff",fg="#000000",relief="flat",highlightthickness=0,border=0,
 	font=("FreeMono",25),disabledbackground="#ffffff",disabledforeground="#000000"
 	,selectbackground="#000000",selectforeground="#ffffff")
 title.bind("<KeyPress>",title_keyp)
-
+title.bind("<Return>",nxt_title)
 
 text=tk.Text(width=66,height=21,bg="#ffffff",fg="#000000",relief="flat",highlightthickness=0,border=0,
 	font=("FreeMono",13),selectbackground="#000000",selectforeground="#ffffff")
