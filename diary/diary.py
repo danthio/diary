@@ -1168,7 +1168,7 @@ def home():
 
 
 	can.create_rectangle(x-7,75+20-7, x+170+7,145+20+7,fill="cyan",outline="cyan")
-	can.create_rectangle(x,75+20, x+170,145+20,fill="#ffffff",outline="cyan",)
+	can.create_rectangle(x,75+20, x+170,145+20,fill="#ffffff",outline="#ffffff",)
 
 	can.create_line(x,75+20+35,x+171,75+20+35,fill="#999999")
 
